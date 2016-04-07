@@ -1,0 +1,17 @@
+package br.univel;
+
+public class LerAnotacao {
+	
+	public LerAnotacao(Object obj){
+		
+	}
+	
+	public static void main(String[] args){
+		
+		Pessoa p = new Pessoa();
+		p.setId(1);
+		p.setNome("Bruce Wayne");
+		
+		new LerAnotacao(p);
+	}
+}

@@ -1,0 +1,16 @@
+package br.univel;
+
+import java.lang.reflect.Field;
+
+public class Test {
+	public Test(Object obj){
+		Class<?> cl = obj.getClass();
+		for(Field field : cl.getDeclaredFields()){
+			System.out.println(field.getNome() + "" + field.getType());
+		}
+	}
+	public static void main(String[] args){
+		Pessoa p = new Pessoa();
+		new Test(p);
+	}
+}
